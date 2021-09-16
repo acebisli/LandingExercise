@@ -1,4 +1,3 @@
-using System;
 using Xunit;
 
 namespace LandingExercise.Test
@@ -8,7 +7,7 @@ namespace LandingExercise.Test
         [Fact]
         public void MakeALanding_Normal_Position()
         {
-            Landing.LandingManager manager = new Landing.LandingManager(5, 15, 5, 15,100,100);
+            Landing.LandingManager manager = new Landing.LandingManager(5, 15, 5, 15, 100, 100);
             var response = manager.MakeALanding(6, 7);
             Assert.True(response == "ok for landing");
             response = manager.MakeALanding(8, 10);
